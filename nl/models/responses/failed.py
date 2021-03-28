@@ -1,5 +1,8 @@
+from typing import Optional
+
 from ..base import BaseResponse
 
 
 class Failed(BaseResponse):
-    ok = False
+    success = False
+    error: Optional[str] = None

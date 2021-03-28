@@ -6,10 +6,11 @@ fastapi == 0.63.0
 
 # D:\repos\neverlosecc\api-wrapper\nl\models\base\event.py: 1
 # D:\repos\neverlosecc\api-wrapper\nl\models\base\response.py: 1
+# D:\repos\neverlosecc\api-wrapper\nl\requests.py: 4
 # D:\repos\neverlosecc\api-wrapper\nl\utils\imports.py: 6
 pydantic == 1.7.3
 
-# D:\repos\neverlosecc\api-wrapper\nl\scaffold.py: 2
+# D:\repos\neverlosecc\api-wrapper\nl\requests.py: 5
 requests == 2.24.0
 
 # D:\repos\neverlosecc\api-wrapper\nl\client.py: 2

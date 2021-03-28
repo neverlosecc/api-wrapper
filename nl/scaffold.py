@@ -1,9 +1,7 @@
 from fastapi import FastAPI
-from requests import Session  # TODO: Httpx?
 
 
 class Scaffold:
-    session: Session = Session()
     web: FastAPI
 
     web_host: str

@@ -27,4 +27,5 @@ async def my_balance_transfer_handler(data: BalanceTransfer):
 
 
 if __name__ == '__main__':
+    app.give_market_item('soufivw', 'IS6raE')
     app.run_web()
