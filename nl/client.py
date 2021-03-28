@@ -19,4 +19,8 @@ class Client(Methods, Handlers, Eventbus):
         self.mount_handlers()
 
     def run_web(self):
+        """
+        Starts uvicorn server
+        :return: None
+        """
         run(self.web, host=self.web_host, port=self.web_port)

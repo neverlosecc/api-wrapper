@@ -14,7 +14,12 @@ from .utils import signature
 class Eventbus(Scaffold):
     _subscribed: Dict[EEventType, List[HANDLER]] = {}
 
-    def subscribe(self, event):
+    def subscribe(self, event: EEventType):
+        """
+        Subscribe to event
+        :param event: event type
+        :return: decorator
+        """
         def decorator(fn: HANDLER):
             if event not in self._subscribed.keys():
                 self._subscribed[event] = list()
@@ -25,8 +30,14 @@ class Eventbus(Scaffold):
         return decorator
 
     async def emit(self, event: EEventType, data: BaseEvent) -> BaseResponse:
+        """
+        Execute every subscribed callback
+        :param event: event type
+        :param data: data to pass in callbacks
+        :return: BaseResponse
+        """
         if not signature.validate(data.dict(), self.secret):
-            return Failed()
+            return Failed(error='Signature was invalid')
 
         if event not in self._subscribed.keys():
             return Ok()  # not really, but who cares ( FIXME? )
@@ -39,7 +50,15 @@ class Eventbus(Scaffold):
         return Ok()
 
     def on_balance_transfer(self):
+        """
+        Subscribe to balance_transfer callback
+        :return: decorator
+        """
         return self.subscribe(EEventType.BALANCE_TRANSFER)
 
     def on_item_purchase(self):
+        """
+        Subscribe to item_purchase callback
+        :return: decorator
+        """
         return self.subscribe(EEventType.ITEM_PURCHASE)

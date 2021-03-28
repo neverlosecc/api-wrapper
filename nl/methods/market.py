@@ -4,6 +4,9 @@ from ..requests import Requests
 
 
 class Market(Requests):
+    """
+    A collection of market api methods
+    """
 
     def give_market_item(self, username: str, item_id: str) -> bool:
         """
