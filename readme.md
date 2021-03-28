@@ -2,6 +2,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+[![PyPi][pypi-shield]][pypi-url]
 
 
 
@@ -123,3 +124,5 @@ Project Link: [https://github.com/neverlosecc/api-wrapper](https://github.com/ne
 [stars-url]: https://github.com/neverlosecc/api-wrapper/stargazers
 [issues-shield]: https://img.shields.io/github/issues/neverlosecc/api-wrapper.svg?style=flat-square
 [issues-url]: https://github.com/neverlosecc/api-wrapper/issues
+[pypi-shield]: https://img.shields.io/pypi/v/neverlose?style=flat-square
+[pypi-url]: https://pypi.org/project/neverlose/
