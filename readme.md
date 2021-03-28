@@ -125,4 +125,4 @@ Project Link: [https://github.com/neverlosecc/api-wrapper](https://github.com/ne
 [issues-shield]: https://img.shields.io/github/issues/neverlosecc/api-wrapper.svg?style=flat-square
 [issues-url]: https://github.com/neverlosecc/api-wrapper/issues
 [license-shield]: https://img.shields.io/github/license/neverlosecc/api-wrapper.svg?style=flat-square
-[license-url]: https://github.com/neverlosecc/api-wrapper/blob/master/LICENSE.txt
+[license-url]: https://github.com/neverlosecc/api-wrapper/blob/master/LICENSE.md
