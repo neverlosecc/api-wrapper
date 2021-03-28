@@ -8,7 +8,7 @@ class Scaffold:
     web_port: int
 
     def __init__(self, secret: str, user_id: int = -1,
-                 app_name: str = 'nl-wrapper',
+                 app_name: str = 'neverlose-wrapper',
                  host: str = '0.0.0.0', port: int = 4354):
         self.secret = secret
         self.web_host = host

@@ -1,4 +1,4 @@
-from nl.utils import signature
+from neverlose.utils import signature
 
 DUMMY_SIGN = 'dc20a4d73447ac51689d6e03115aa135a8d734e610352dda818e830e70a60560'
 DUMMY_EVENT = {

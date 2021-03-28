@@ -3,9 +3,9 @@ from sys import path
 
 path.insert(0, dirname(abspath(__file__)) + '/../')
 
-from nl import Client
-from nl.models.events import BalanceTransfer
-from nl.models.events import ItemPurchase
+from neverlose import Client
+from neverlose.models.events import BalanceTransfer
+from neverlose.models.events import ItemPurchase
 
 from json import loads
 from pathlib import Path
