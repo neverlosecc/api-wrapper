@@ -4,7 +4,6 @@ from typing import TypeVar, Type
 from pydantic import parse_obj_as
 from requests import Session
 
-from .constants import SECRET_FIELD
 from .exceptions import ApiException
 from .models.base import BaseResponse
 from .models.responses import Failed
@@ -25,7 +24,7 @@ class Requests(Scaffold):
     def _generate_payload(self, data: dict) -> dict:
         data['user_id'] = self.user_id
         data['id'] = randint(111111, 999999)
-        data[SECRET_FIELD] = signature.generate(data, self.secret)
+        data['signature'] = signature.generate(data, self.secret)
         return data
 
     @staticmethod

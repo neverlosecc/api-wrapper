@@ -1,13 +1,12 @@
 from hashlib import sha256
 
-from ..constants import SECRET_FIELD
 from ..types import EVENT
 
 
 def _stringify_obj(obj: EVENT, secret: str):
     ret = ''
     for key in sorted(obj):
-        if key == SECRET_FIELD:
+        if key == 'signature':
             continue
         ret = f'{ret}{key}{obj[key]}'
     return f'{ret}{secret}'
@@ -18,4 +17,4 @@ def generate(obj: EVENT, secret: str):
 
 
 def validate(obj: EVENT, secret: str):
-    return generate(obj, secret) == obj[SECRET_FIELD]
+    return generate(obj, secret) == obj['signature']
