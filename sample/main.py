@@ -1,8 +1,19 @@
+from os.path import dirname, abspath
+from sys import path
+
+path.insert(0, dirname(abspath(__file__)) + '/../')
+
 from nl import Client
 from nl.models.events import BalanceTransfer
 from nl.models.events import ItemPurchase
 
-app = Client('hsabdlflhabjaslfjnasdjbasgh')
+from json import loads
+from pathlib import Path
+
+with open(Path(__file__).parent / 'config.json', 'r') as f:
+    cfg = loads(f.read())
+
+app = Client(**cfg)
 
 
 @app.on_item_purchase()

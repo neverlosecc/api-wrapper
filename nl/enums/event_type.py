@@ -1,5 +1,5 @@
-from enum import auto
 from enum import IntEnum
+from enum import auto
 from enum import unique
 
 
