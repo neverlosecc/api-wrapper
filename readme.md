@@ -2,7 +2,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 
 
 
@@ -124,5 +123,3 @@ Project Link: [https://github.com/neverlosecc/api-wrapper](https://github.com/ne
 [stars-url]: https://github.com/neverlosecc/api-wrapper/stargazers
 [issues-shield]: https://img.shields.io/github/issues/neverlosecc/api-wrapper.svg?style=flat-square
 [issues-url]: https://github.com/neverlosecc/api-wrapper/issues
-[license-shield]: https://img.shields.io/github/license/neverlosecc/api-wrapper.svg?style=flat-square
-[license-url]: https://github.com/neverlosecc/api-wrapper/blob/master/LICENSE.md
